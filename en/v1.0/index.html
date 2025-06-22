@@ -10,11 +10,11 @@ fetch('https://ipapi.co/json/')
     } else if (['FR', 'DE', 'NL', 'IT', 'ES', 'SE'].includes(country)) {
       window.location.href = './eu.html';
     } else {
-      window.location.href = './global.html';
+      window.location.href = './en.html';
     }
   })
   .catch(() => {
     // IP 조회 실패 시 fallback
-    window.location.href = './global.html';
+    window.location.href = './en.html';
   });
 </script>
